@@ -2,14 +2,16 @@
 /* GLOBAL VARIABLES */
 /* ============================= */
 :root {
-  --bg-color: #ffffff;
-  --primary-color: #7c3aed;
-  --secondary-color: #a78bfa;
-  --text-color: #1f2933;
-  --muted-text: #6b7280;
-  --card-bg: #f9fafb;
-  --border-color: #e5e7eb;
+  --bg-color: #15202b;        /* Twitter dim background */
+  --card-bg: #1e2732;         /* Card / section bg */
+  --primary-color: #1d9bf0;   /* Twitter blue */
+  --secondary-color: #8ecdf7; /* Soft blue */
+  --text-color: #e7e9ea;      /* Main text */
+  --muted-text: #8899a6;      /* Secondary text */
+  --border-color: #2f3b45;
 }
+
+
 /* DARK MODE */
 [data-theme="dark"] {
   --bg-color: #0f172a;
@@ -88,12 +90,12 @@ body {
   bottom: -6px;
   width: 0%;
   height: 2px;
-  background: var(--primary-color);
+  background: var(--mary-color);
   transition: 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: var(--primary-color);
+  color: var(--secondary-color)
 }
 
 .nav-links a:hover::after {
@@ -120,27 +122,30 @@ body {
   border-radius: 4px;
 }
 
-/* ===== MOBILE ===== */
 @media (max-width: 768px) {
+
   .navbar {
-    padding: 14px 25px;
+    background: #000;
   }
 
-  .menu-icon {
-    display: flex;
+  /* Hamburger icon */
+  .menu-icon span {
+    background: #fff;
   }
 
+  /* Dropdown menu */
   .nav-links {
     position: absolute;
     top: 70px;
-    right: 0;
+    left: 0;
     width: 100%;
-    background: var(--bg-color);
-    flex-direction: column;
-    padding: 25px 0;
+    background: #000 !important; /* ← THIS FIXES IT */
     display: none;
-    gap: 18px;
-    border-bottom: 1px solid var(--border-color);
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0;
+    gap: 20px;
+    z-index: 999;
   }
 
   .nav-links.open {
@@ -148,9 +153,16 @@ body {
   }
 
   .nav-links a {
+    color: #fff;
     font-size: 16px;
+    font-weight: 500;
+  }
+
+  .nav-links a:hover {
+    color: var(--secondary-color);
   }
 }
+
 
 /* ============================= */
 /* HERO SECTION */
@@ -161,7 +173,12 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 120px 8%;
-  background: linear-gradient(135deg, #ffffff, #f5f3ff);
+  background: linear-gradient(
+  135deg,
+  #15202b 0%,
+  #1e2732 50%,
+  #22303c 100%
+);;
 }
 
 .hero-left {
@@ -291,7 +308,7 @@ body {
 
 .skills-list span {
   padding: 10px 18px;
-  background: #ede9fe;
+  background:var(--border-color);
   color: var(--primary-color);
   border-radius: 20px;
   font-size: 14px;
@@ -303,7 +320,13 @@ body {
 .resume-section {
   padding: 100px 20px;
   text-align: center;
-  background: #f5f3ff;
+  background:linear-gradient(
+  135deg,
+  #15202b 0%,
+  #1e2732 50%,
+  #22303c 100%
+);
+
 }
 
 .resume-section h2 {
