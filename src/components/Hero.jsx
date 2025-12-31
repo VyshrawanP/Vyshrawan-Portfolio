@@ -1,15 +1,15 @@
 function Hero() {
   return (
+
     <section className="hero">
       <div className="hero-left">
         <h1>
-          Hi, I’m <span>Vyshrawan Pothuraju</span>
+          Hi, I’m <span>Vyshrawan</span>
         </h1>
         <h2>Backend & Full Stack Developer</h2>
 
         <p>
-          I build scalable backend systems and modern web applications.
-          Passionate about automation, problem solving, and clean architecture.
+  Pre-final year Computer Science student skilled in backend and web application development using Java, Spring Boot, MySQL, and Python. Familiar with AWS (EC2, S3), Bootstrap, and Tailwind CSS. Strong foundation in DSA, rapid learning ability, and hands-on experience integrating ML models into web systems. Seeking a software engineering internship to contribute to scalable application development.
         </p>
 
         <div className="hero-buttons">
@@ -27,6 +27,7 @@ function Hero() {
         </div>
       </div>
     </section>
+   
   );
 }
 

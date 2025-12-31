@@ -5,6 +5,8 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import ResumeSection from "./components/ResumeSection";
 import Tools from "./components/Tools";
+import AchievementsTicker from "./components/AchievementsTicker";
+import Education from "./components/Education";
 function App() {
   return (
     <>
@@ -12,7 +14,8 @@ function App() {
       <Hero />
       <Project />
       <Skills />
-      
+      <AchievementsTicker />
+      <Education />
       <Tools /> 
 <Contact />
        <ResumeSection /> 

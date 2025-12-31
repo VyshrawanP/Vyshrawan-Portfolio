@@ -1,16 +1,5 @@
 import { useState } from "react";
-
-const tools = [
-  { name: "Java", icon: "https://cdn.simpleicons.org/java", level: "Advanced", type: "Backend" },
-  { name: "Spring Boot", icon: "https://cdn.simpleicons.org/springboot", level: "Advanced", type: "Backend" },
-  { name: "React", icon: "https://cdn.simpleicons.org/react", level: "Intermediate", type: "Frontend" },
-  { name: "JavaScript", icon: "https://cdn.simpleicons.org/javascript", level: "Intermediate", type: "Frontend" },
-  { name: "Python", icon: "https://cdn.simpleicons.org/python", level: "Intermediate", type: "Backend" },
-  { name: "MySQL", icon: "https://cdn.simpleicons.org/mysql", level: "Advanced", type: "Database" },
-  { name: "AWS", icon: "https://cdn.simpleicons.org/amazonaws", level: "Beginner", type: "Cloud" },
-  { name: "Git", icon: "https://cdn.simpleicons.org/git", level: "Advanced", type: "Tools" },
-  { name: "GitHub", icon: "https://cdn.simpleicons.org/github", level: "Advanced", type: "Tools" }
-];
+import tools from "../data/Tools";
 
 function Tools() {
   const [filter, setFilter] = useState("All");
@@ -24,28 +13,57 @@ function Tools() {
     <section className="section-block" id="tools">
       <h2>Tools & Technologies</h2>
 
+      {/* FILTER BUTTONS */}
       <div className="filter-buttons">
-        {["All", "Backend", "Frontend", "Database", "Cloud", "Tools"].map(btn => (
-          <button
-            key={btn}
-            className={filter === btn ? "active" : ""}
-            onClick={() => setFilter(btn)}
-          >
-            {btn}
-          </button>
-        ))}
+        {["All", "Backend", "Frontend", "Database", "Cloud", "Tools"].map(
+          (btn) => (
+            <button
+              key={btn}
+              className={filter === btn ? "active" : ""}
+              onClick={() => setFilter(btn)}
+            >
+              {btn}
+            </button>
+          )
+        )}
       </div>
 
+      {/* ICON GRID */}
       <div className="tools-slider">
         <div className="tools-track">
           {filtered.map((tool, index) => (
             <div className="tool-card" key={index}>
-              <img src={tool.icon} alt={tool.name} />
+              <div className="tool-icon">{tool.icon}</div>
               <p>{tool.name}</p>
               <span className="tooltip">{tool.level}</span>
             </div>
           ))}
         </div>
+      </div>
+
+      {/* TABLE VIEW */}
+      <div className="tools-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Tool</th>
+              <th>Level</th>
+              <th>Category</th>
+            </tr>
+          </thead>
+          <tbody>
+            {filtered.map((tool, i) => (
+              <tr key={i}>
+                <td className="tool-name">
+                  <span className="table-icon">{tool.icon}</span>
+                  {tool.name}
+                </td>
+                <td>{tool.level}</td>
+                <td>{tool.type}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </section>
   );

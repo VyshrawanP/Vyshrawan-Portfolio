@@ -1,5 +1,21 @@
 const project = [
-      {
+
+  {
+    title: "Quiz Master App",
+    tech: ["Spring Boot", "MySQL", "JPA"],
+    description:
+      "Developed a full quiz platform supporting multiple quizzes, categories, and automatic scoring. Built REST APIs for quiz creation, submission, and evaluation. Implemented persistent storage using Hibernate/JPA with MySQL.",
+      github:"https://github.com/VyshrawanP/QuizMaster-App"
+  },
+  {
+    title: "FrameFlash Productions",
+    tech: ["Spring Boot", "HTML", "CSS", "JS"],
+    description:
+      "Built a responsive full-stack website for a production startup to showcase films, news, and announcements.  Implemented scroll-snap UI, mobile navbar, and tools for managing short film content.",
+       github:"https://github.com/VyshrawanP/FrameFlashProductions"
+  },
+ 
+        {
     title: "Smart Delivery Confirmation System (Featured)",
 
     tech: ["Spring Boot", "REST API", "Automation"],
@@ -8,29 +24,20 @@ const project = [
    github: "https://github.com/yourusername/smart-delivery"
     },
   {
-    title: "Quiz Master App",
-    tech: "Spring Boot, MySQL, JPA",
-    description:
-      "Built a quiz platform with REST APIs, automatic scoring and persistent storage."
-  },
-  {
-    title: "FrameFlash Productions",
-    tech: "Spring Boot, HTML, CSS, JS",
-    description:
-      "Developed a production website with responsive UI and content management."
-  },
-  {
     title: "Real Estate Price Predictor",
-    tech: "Spring Boot, Flask, ML",
+    tech: ["Spring Boot", "Flask", "ML"],
     description:
-      "Built ML-based price predictor and integrated Flask model with Spring Boot."
+      "Built an ML-integrated web app to estimate Hyderabad property prices using user inputs. Connected Flask ML service with Spring Boot backend via REST APIs.  Added logs, tests, and trained regression model files for predictions. ",
+      github:"https://github.com/VyshrawanP/realestate-predictor-project"
   },
   {
     title: "CGPA Calculator",
-    tech: "HTML, CSS, JS, Spring Boot",
+    tech: ["HTML", "CSS", "JS", "Spring Boot"],
     description:
-      "Created GPA calculator with REST APIs and dynamic frontend."
+      "Built a full-stack GPA/CGPA calculator with a Spring Boot backend and a responsive frontend. Exposed REST            endpoints to compute semester GPA and cumulative CGPA based on user inputs. Implemented dynamic UI logic using.     Java Script for form handling and real-time updates.",
+        github:"https://github.com/VyshrawanP/cgpacalculation",
   }
+
 ];
 
 export default project;
