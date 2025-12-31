@@ -589,8 +589,9 @@ body {
 .tools-track {
   display: flex;
   gap: 25px;
-  animation: scrollTools 25s linear infinite;
-}
+    animation: scrollTools 3s linear infinite;
+  }
+
 
 .tools-slider:hover .tools-track {
   animation-play-state: paused;
