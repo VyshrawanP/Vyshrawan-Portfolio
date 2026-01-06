@@ -1,3 +1,10 @@
+import {
+  FaGithub,
+  FaLinkedin,
+  FaInstagram,
+  FaXTwitter,
+  FaEnvelope
+} from "react-icons/fa6";
 import { useState } from "react";
 import project from "../data/Project";
 
@@ -35,13 +42,15 @@ function Projects() {
             </div>
 
             <div className="modal-buttons">
+           
               <a
                 href={selectedProject.github}
                 target="_blank"
                 rel="noreferrer"
                 className="github-btn"
               >
-                View on GitHub
+                   <FaGithub />
+                  &emsp;View on GitHub
               </a>
 
               <button

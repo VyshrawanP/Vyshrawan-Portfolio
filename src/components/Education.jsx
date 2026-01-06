@@ -11,7 +11,8 @@ function Education() {
           </p>
           <p>VIT-AP University</p>
           <span>Sep 2023 – Oct 2027</span>
-          <p className="edu-grade">CGPA: 8.01</p>
+          <p className="edu-grade">CGPA: 7.97
+          </p>
         </div>
 
         <div className="edu-card">

@@ -500,7 +500,7 @@ body {
 }
 
 .project-tags span {
-  background: #ede9fe;
+ background: rgba(0, 0, 0, 0.6);
   color: var(--primary-color);
   padding: 6px 12px;
   border-radius: 20px;
@@ -971,7 +971,7 @@ body {
 
 .project-tags li {
   list-style: none;
-  background: rgba(188, 108, 37, 0.15);
+ background: rgba(0, 0, 0, 0.6);
   color: var(--primary-color);
   padding: 6px 14px;
   border-radius: 20px;
