@@ -12,7 +12,8 @@ const project = [
     tech: ["Spring Boot", "HTML", "CSS", "JS"],
     description:
       "Built a responsive full-stack website for a production startup to showcase films, news, and announcements.  Implemented scroll-snap UI, mobile navbar, and tools for managing short film content.",
-       github:"https://github.com/VyshrawanP/FrameFlashProductions"
+       github:"https://github.com/VyshrawanP/FrameFlashProductions",
+       live:"https://frameflashproduction.netlify.app/"
   },
  
         {
@@ -29,6 +30,7 @@ const project = [
     description:
       "Built an ML-integrated web app to estimate Hyderabad property prices using user inputs. Connected Flask ML service with Spring Boot backend via REST APIs.  Added logs, tests, and trained regression model files for predictions. ",
       github:"https://github.com/VyshrawanP/realestate-predictor-project"
+      
   },
   {
     title: "CGPA Calculator",
@@ -36,6 +38,7 @@ const project = [
     description:
       "Built a full-stack GPA/CGPA calculator with a Spring Boot backend and a responsive frontend. Exposed REST            endpoints to compute semester GPA and cumulative CGPA based on user inputs. Implemented dynamic UI logic using.     Java Script for form handling and real-time updates.",
         github:"https://github.com/VyshrawanP/cgpacalculation",
+        live:"https://cgpacalculation-2.onrender.com/"
   }
 
 ];
